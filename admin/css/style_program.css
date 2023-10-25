@@ -1,0 +1,143 @@
+/* Navigation Bar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(../img/Asset\ 9\ \(Landsccape\).jpg);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+
+    /* Memberi efek gradasi hitam di jumbotron */
+    position: relative;
+}
+
+/* Memberi efek gradasi hitam di jumbotron */
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+/* Memberi efek gradasi hitam di jumbotron */
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+/* Workingspace */
+.workingspace {
+    margin-top: 120px;
+    margin-bottom: 100px;
+
+}
+
+.workingspace .figure {
+    width: 200px;
+}
+
+
+.card {
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Sesuaikan dengan ukuran yang diinginkan */
+  object-fit: cover;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #808080;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.footer p {
+    font-size: 18px;
+    color: white;
+    padding: 1%;
+    padding-top: 30px;
+}
+
+
+/* Utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+    
+}
+
+
+
+
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) { 
+
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+
+    
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #0b63dc;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 640px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 62px;
+    }
+    
+ }

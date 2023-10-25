@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+ }
+ 
+ .container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+    padding-bottom: 80px;
+ }
+
+ .container .content{
+    width: 700px;
+    text-align: center;
+ }
+
+ .container .content h3{
+    font-size: 5vw;
+    text-transform: uppercase;
+ }
+
+ .container .content p{
+    font-size: 20px;
+    padding: 10px 0;
+ }
+
+ .container .content p span{
+    color: crimson;
+ }
+
+ .container .content .logout{
+    display: inline-block;
+    margin-top: 10px;
+    background: #000;
+    color: #fff;
+    padding: 10px 35px;
+    font-size: 20px;
+ }
+
+ .container .content .logout:hover{
+    background: crimson;
+ }
+
+ .form-container{
+   min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/Asset\ 7\ \(Landsccape\).jpg);
+    padding-bottom: 80px;
+    background-size: 100%;
+ }
+
+ .form-container form{
+   text-align: center;
+   width: 500px;
+   background: #fff;
+   border: 2px solid #000;
+   padding: 20px;
+ }
+
+ .form-container  h3{
+   font-size: 30px;
+   margin-bottom: 10px;
+   text-transform: uppercase;
+ }
+
+ /* ini buat warna border input email dan password */
+ .form-container form .box{
+   width: 100%;
+   padding: 12px 15px;
+   font-size: 20px;
+   border: 2px solid #000;
+   margin: 10px 0;
+ }
+
+ /* ini buat warna tombol "Masuk" */
+ .form-container form .form-btn{
+   display: block;
+    margin: 10px 0;
+    background: #000;
+    color: #fff;
+    padding: 15px 35px;
+    font-size: 20px;
+    width: 100%;
+    cursor: pointer
+ }
+
+ .form-container form .form-btn:hover{
+   background: crimson;
+ }
+
+ .form-container form p{
+   font-size: 20px;
+   padding-top: 10px;
+ }
+
+ /* ini buat tombol "Daftar Sekarang" */
+ .form-container form p a{
+   color: crimson;
+ }
+
+.form-container form .error-msg{
+   display: block;
+   margin: 10px 0;
+   background: crimson;
+   font-size: 20px;
+   color: #fff;
+   padding: 10px;
+}
